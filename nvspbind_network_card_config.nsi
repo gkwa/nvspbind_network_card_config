@@ -103,7 +103,7 @@ Section section1 section_section1
 	File configure_cards.bat
 
 	ExpandEnvStrings $0 %COMSPEC%
-	nsExec::ExecToLog '"$0" /c cd "$TEMP\${name} && call configure_cards.bat"
+	nsExec::ExecToLog '"$0" /c cd "$TEMP\${name}" && call configure_cards.bat'
 
 	${If} 0 == $debug
 		SetOutPath '$TEMP'
