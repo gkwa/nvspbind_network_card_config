@@ -10,8 +10,6 @@ for %%G in ("Local Area Connection" "Local Area Connection 2") do (
     nvspbind.exe /d %%G ms_pacer
     nvspbind.exe /d %%G ms_server
     nvspbind.exe /d %%G ms_tcpip6
-    nvspbind.exe /d %%G ms_lltdio
-    nvspbind.exe /d %%G ms_rspndr
     nvspbind.exe /e %%G ms_tcpip4
 
 )
